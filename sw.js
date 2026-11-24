@@ -4,7 +4,7 @@
  * Czcionki Google: z pamięci po pierwszym pobraniu.
  * GitHub (synchronizacja) i inne zewnętrzne adresy: nigdy nie są zapisywane.
  * Po zmianie TEGO pliku podbij CACHE_VERSION, żeby telefon pobrał nową wersję. */
-const CACHE_VERSION = 'gplaner-v1';
+const CACHE_VERSION = 'gplaner-v2';
 const APP_CACHE = CACHE_VERSION + '-app';
 const FONT_CACHE = 'gplaner-fonts';
 const CORE = [
@@ -12,19 +12,16 @@ const CORE = [
   './index.html',
   './manifest.webmanifest',
   './assets/planer-mark.svg',
-  './assets/ui-icons.svg',
   './assets/app-icons/apple-touch-icon.png',
   './assets/app-icons/favicon-32.png',
   './assets/app-icons/icon-192.png',
   './assets/app-icons/icon-512.png',
-  './assets/icons/calendar.svg',
   './assets/icons/daily.svg',
   './assets/icons/general.svg',
   './assets/icons/home.svg',
   './assets/icons/list.svg',
   './assets/icons/matrix.svg',
-  './assets/icons/notes.svg',
-  './assets/icons/tasks.svg'
+  './assets/icons/notes.svg'
 ];
 
 self.addEventListener('install', event => {
